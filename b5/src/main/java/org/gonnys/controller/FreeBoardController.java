@@ -22,7 +22,7 @@ public class FreeBoardController {
 	@GetMapping("/list")
 	public void list(PageDTO pageDTO, Model model) {
 		log.info("list page start.....................");
-		
+		log.info("");
 		Page<Object[]> result
 		= repository.listPage(pageDTO.makePageable(0, "bno"));
 		
